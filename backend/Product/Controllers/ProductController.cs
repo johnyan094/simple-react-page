@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Product.Exceptions;
 using Product.Services;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -26,8 +27,15 @@ namespace Product.Controllers
         [HttpGet("{id}")]
         public IActionResult Get(int id)
         {
-            var productDetails = _productService.GetProductDetails(id);
-            return Ok(productDetails);
+            try
+            {
+                var productDetails = _productService.GetProductDetails(id);
+                return Ok(productDetails);
+            }
+            catch (NotFoundException)
+            {
+                return NotFound();
+            }
         }
     }
 }

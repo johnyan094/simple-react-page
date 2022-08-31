@@ -6,6 +6,6 @@ namespace Product.Services
     public interface IProductService
     {
         List<ProductDto> GetAllProducts();
-        ProductDetailsDto GetProductDetails(int id);
+        ProductModel GetProductDetails(int id);
     }
 }

@@ -18,6 +18,12 @@ export const ProductDetails = ({ productId, backButtonHandler }) => {
 
       {productDetails && (
         <dl>
+          <dt>Id</dt>
+          <dd>{productDetails.id}</dd>
+          <dt>Name</dt>
+          <dd>{productDetails.name}</dd>
+          <dt>SKU</dt>
+          <dd>{productDetails.sku}</dd>
           <dt>Description</dt>
           <dd>{productDetails.description}</dd>
           <dt>Quantity</dt>

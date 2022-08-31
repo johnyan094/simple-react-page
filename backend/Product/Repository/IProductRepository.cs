@@ -6,6 +6,6 @@ namespace Product.Repository
     public interface IProductRepository
     {
         List<ProductDto> GetAllProduct();
-        ProductDetailsDto GetProductDetails(int id);
+        ProductModel GetProductDetails(int id);
     }
 }

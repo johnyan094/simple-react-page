@@ -16,7 +16,7 @@ namespace Product.Services
             return _productRepository.GetAllProduct();
         }
 
-        public ProductDetailsDto GetProductDetails(int id)
+        public ProductModel GetProductDetails(int id)
         {
             return _productRepository.GetProductDetails(id);
         }

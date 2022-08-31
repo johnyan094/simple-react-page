@@ -7,6 +7,7 @@ using Microsoft.Extensions.Hosting;
 using Product.AutoMapper;
 using Product.Repository;
 using Product.Services;
+using Product.Store;
 
 namespace Product
 {
@@ -24,7 +25,8 @@ namespace Product
         {
             services.AddCors();
             services.AddControllers();
-            services.AddSingleton<IProductRepository, ProductRepository>();
+            services.AddSingleton<IProductStore, ProductStore>();
+            services.AddScoped<IProductRepository, ProductRepository>();
             services.AddScoped<IProductService, ProductService>();
 
             var mapperConfig = new MapperConfiguration(mc =>
