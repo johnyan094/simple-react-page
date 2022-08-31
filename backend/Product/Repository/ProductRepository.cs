@@ -16,7 +16,7 @@ namespace Product.Repository
                 Id = 1,
                 SKU = "0001",
                 Description = "product 1 desc",
-                Price = 1.00,
+                Price = 1.01,
                 Quantity = 1
             },
             new ProductModel
@@ -26,7 +26,7 @@ namespace Product.Repository
                 SKU = "0002",
                 Description = "product 2 desc",
                 Price = 2.00,
-                Quantity = 2
+                Quantity = 20
             },
             new ProductModel
             {
@@ -35,7 +35,7 @@ namespace Product.Repository
                 SKU = "0003",
                 Description = "product 3 desc",
                 Price = 3.00,
-                Quantity = 3
+                Quantity = 33
             },
             new ProductModel
             {
@@ -44,7 +44,7 @@ namespace Product.Repository
                 SKU = "0004",
                 Description = "product 4 desc",
                 Price = 4.00,
-                Quantity = 4
+                Quantity = 400
             },
         };
 

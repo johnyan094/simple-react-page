@@ -1,0 +1,10 @@
+.tableContainer {
+    width: 100%;
+}
+
+.link {
+    &:hover{
+        color: red;
+        cursor: pointer;
+    }
+}
